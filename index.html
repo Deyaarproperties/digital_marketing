@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen Digital Marketing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: #fff;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #02AF86;
+    }
+    .hero {
+      height: 90vh;
+      background-image: url('https://cdn.pixabay.com/photo/2020/04/30/19/33/social-media-5117283_1280.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      animation: fadeIn 2s ease-in;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #02AF86;
+    }
+    .services, .clients, .reviews, .process, .offerings {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+    form input, form textarea {
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      padding: 10px;
+      background: #02AF86;
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #025c48;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>NextGen Digital</h2>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#offerings">What We Offer</a></li>
+        <li><a href="#process">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Your Growth, Our Mission</h1>
+      <p>Empowering businesses with digital excellence</p>
+    </div>
+  </div>
+
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>SEO Optimization</h3>
+        <p>Rank higher on Google with our powerful SEO tools.</p>
+      </div>
+      <div class="card">
+        <h3>Social Media Marketing</h3>
+        <p>Grow your brand's presence on all major platforms.</p>
+      </div>
+      <div class="card">
+        <h3>Content Creation</h3>
+        <p>Engaging and high-quality content tailored to your niche.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="clients">
+    <h2 class="section-title">Our Clients</h2>
+    <div class="clients">
+      <div class="card"><img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Client A"><p>Brand A</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1560264280-88b68371db39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Client B"><p>Company B</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1591696331119-68a62e158e3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" alt="Client C"><p>Startup C</p></div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2 class="section-title">Client Reviews</h2>
+    <div class="reviews">
+      <div class="card"><p>"Fantastic service! Our leads increased by 200%." - John D.</p></div>
+      <div class="card"><p>"Professional team and top-notch results." - Sarah M.</p></div>
+      <div class="card"><p>"The ROI was phenomenal. Highly recommended." - Ahmed K.</p></div>
+    </div>
+  </section>
+
+  <section id="offerings">
+    <h2 class="section-title">What We Offer</h2>
+    <div class="offerings">
+      <div class="card"><h4>100% Transparent Reporting</h4></div>
+      <div class="card"><h4>Data-Driven Strategy</h4></div>
+      <div class="card"><h4>Custom Campaigns</h4></div>
+    </div>
+  </section>
+
+  <section id="process">
+    <h2 class="section-title">How It Works</h2>
+    <div class="process">
+      <div class="card"><h4>1. Consultation</h4><p>Understand your business and goals.</p></div>
+      <div class="card"><h4>2. Strategy</h4><p>Create tailored digital plans.</p></div>
+      <div class="card"><h4>3. Execution</h4><p>Run and monitor your campaigns.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NextGen Digital. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
